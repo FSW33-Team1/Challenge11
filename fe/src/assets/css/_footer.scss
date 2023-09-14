@@ -1,0 +1,36 @@
+@import "global";
+
+footer {
+	.container {
+		.row {
+			justify-content: space-around;
+			.col-md-4 {
+				h2 {
+					letter-spacing: 2px;
+				}
+			}
+			.col-md-2 {
+				h3 {
+					font-size: 17px;
+					font-weight: 700;
+					letter-spacing: 1px;
+					margin-bottom: 15px;
+				}
+				ul {
+					padding-left: 0;
+					li {
+						margin-bottom: 5px;
+						a {
+							color: #9ca0d2;
+						}
+					}
+				}
+			}
+		}
+		.text-copyright {
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}

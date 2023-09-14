@@ -1,0 +1,39 @@
+@import "global";
+
+.sect-banner {
+	background: url("/images/detail-game/bg-hero.webp") center no-repeat;
+	background-size: cover;
+	height: 45vh;
+	.container {
+		.content-hero {
+			h1 {
+				text-shadow: 3px 3px 0px #b154f0;
+				font-size: 70px;
+				font-family: $metal;
+				letter-spacing: 3px;
+			}
+			nav {
+				color: #fff !important;
+				ol {
+					li {
+						font-weight: 600;
+					}
+					li:nth-child(1) {
+						a {
+							color: #b154f0 !important;
+							&:hover {
+								text-decoration: underline !important;
+							}
+						}
+					}
+					li:nth-child(2) {
+						color: #fff !important;
+						&::before {
+							color: #fff !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

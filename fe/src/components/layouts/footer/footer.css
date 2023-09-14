@@ -1,0 +1,29 @@
+.container {
+	justify-content: space-around;
+	padding: 50px 0;
+}
+
+.h3-footer {
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+a {
+	color: #9ca0d2 !important;
+	text-decoration: none !important;
+}
+
+.text-copyright {
+	font-size: 14px;
+}

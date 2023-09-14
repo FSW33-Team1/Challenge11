@@ -1,0 +1,30 @@
+@import "global";
+
+.navbar {
+	background-color: rgba(20, 14, 56, 0.9) !important;
+	.container {
+		a {
+			img {
+				width: 100px;
+			}
+		}
+		.collapse {
+			ul {
+				column-gap: 10px;
+				li {
+					.nav-link {
+						color: #9ca0d2;
+
+					}
+				}
+			}
+			.btn-regiter {
+				background-color: #001aff;
+				padding: 8px 12px;
+				border-radius: 10px;
+				color: #fff;
+				margin-left: 20px;
+			}
+		}
+	}
+}

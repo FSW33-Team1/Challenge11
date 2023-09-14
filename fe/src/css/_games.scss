@@ -1,0 +1,59 @@
+@import "global";
+
+.sect-2-games {
+	padding-top: 80px;
+	.container {
+		.title {
+			margin-bottom: 50px;
+			h1 {
+				text-shadow: 3px 3px 0px #b154f0;
+				font-size: 60px;
+				font-family: $metal;
+				border-bottom: solid 2px #b154f0;
+				width: fit-content;
+				margin: auto;
+			}
+		}
+		.row {
+			.col-md-4 {
+				margin-bottom: 15px;
+				.card {
+					position: relative;
+					background-color: transparent;
+					.header {
+
+						overflow: hidden;
+						img {
+							border-radius: 5px;
+							&:hover {
+								overflow: hidden;
+								transform: scale(1.1);
+								transition: all .1s ease-in-out;
+							}
+						}
+					}
+					.card-body {
+						padding-top: 5px;
+						font-family: $exo;
+						text-transform: capitalize;
+						text-align: center;
+						color: #eee;
+						h3 {
+							font-size: 22px;
+						}
+					}
+					.link {
+						position: absolute;
+						background-color: #b154f0;
+						color: #fff;
+						font-weight: 600;
+						bottom: 90px;
+						right: 10px;
+						padding: 4px 15px;
+
+					}
+				}
+			}
+		}
+	}
+}

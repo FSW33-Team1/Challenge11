@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Metal+Mania&display=swap");
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.navbar {
+  background-color: rgba(20, 14, 56, 0.9) !important;
+}
+.navbar .container a img {
+  width: 100px;
+}
+.navbar .container .collapse ul {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.navbar .container .collapse ul li .nav-link {
+  color: #9ca0d2;
+}
+.navbar .container .collapse .btn-regiter {
+  background-color: #001aff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+body {
+  background: url("../images/home/body-bg.webp");
+}
+
+* {
+  color: #fff;
+}
+
+.sec-1-home {
+  background: url("../images/home/bg-cover-hero.webp") center center no-repeat;
+  height: 100vh;
+}
+.sec-1-home .container {
+  padding-top: 50px;
+}
+.sec-1-home .container .row .hero-left h1 {
+  margin-bottom: 30px;
+  font-size: 95px;
+  text-shadow: 3px 3px 0px #b154f0;
+  letter-spacing: 2px;
+  height: 240px;
+}
+.sec-1-home .container .row .hero-left h1 span {
+  font-family: "Metal Mania", cursive;
+}
+.sec-1-home .container .row .hero-left p {
+  color: #fff;
+  font-family: "Exo", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.sec-1-home .container .row .hero-left button {
+  background-color: #b154f0;
+  border: 3px solid #dead27;
+  padding: 10px 30px;
+  font-family: "Metal Mania", cursive;
+  letter-spacing: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.sect-2-home {
+  padding-top: 60px;
+}
+.sect-2-home .container .row .col-md-6 h3 {
+  font-size: 15px;
+  color: #9ca0d2;
+}
+.sect-2-home .container .row .col-md-6 h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.col-md-3 {
+  margin-bottom: 25px;
+}
+.col-md-3 .card {
+  background-color: #16182d;
+  border-radius: 10px;
+}
+.col-md-3 .card .card-header {
+  padding: 0;
+}
+.col-md-3 .card .card-header img {
+  border-radius: 7px;
+}
+.col-md-3 .card .card-body {
+  border-bottom: 1px solid rgba(156, 160, 210, 0.4431372549);
+  width: 90%;
+  margin: auto;
+}
+.col-md-3 .card .card-body h5 {
+  color: #fff;
+}
+.col-md-3 .card a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  margin: 20px auto 15px;
+  border-radius: 7px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 8px 14px;
+  background-color: #001aff;
+}
+
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.sect-1-detail {
+  background: url("../images/detail-game/bg-hero.webp") center no-repeat;
+  height: 40vh;
+}
+.sect-1-detail .container .content-hero h1 {
+  font-size: 90px;
+  text-shadow: 3px 3px 0px #b154f0;
+  letter-spacing: 5px;
+  font-family: "Metal Mania", cursive;
+}
+
+.sect-2-detail .container .image-cover {
+  margin-bottom: 15px;
+}
+.sect-2-detail .container .image-cover img {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.sect-2-detail .container .image-cover button {
+  background-color: #b154f0;
+  color: #fff;
+  border: 0;
+  padding: 8px 0;
+  width: 60%;
+  margin: auto;
+  font-weight: 600;
+  font-size: 17px;
+}
+.sect-2-detail .container .image-cover button span {
+  font-size: 20px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.sect-banner {
+  background: url("../images/detail-game/bg-hero.webp") center no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+.sect-banner .container .content-hero h1 {
+  text-shadow: 3px 3px 0px #b154f0;
+  font-size: 70px;
+  font-family: "Metal Mania", cursive;
+  letter-spacing: 3px;
+}
+.sect-banner .container .content-hero nav {
+  color: #fff !important;
+}
+.sect-banner .container .content-hero nav ol li {
+  font-weight: 600;
+}
+.sect-banner .container .content-hero nav ol li:nth-child(1) a {
+  color: #b154f0 !important;
+}
+.sect-banner .container .content-hero nav ol li:nth-child(1) a:hover {
+  text-decoration: underline !important;
+}
+.sect-banner .container .content-hero nav ol li:nth-child(2) {
+  color: #fff !important;
+}
+.sect-banner .container .content-hero nav ol li:nth-child(2)::before {
+  color: #fff !important;
+}
+
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.sect-2-games {
+  padding-top: 80px;
+}
+.sect-2-games .container .title {
+  margin-bottom: 50px;
+}
+.sect-2-games .container .title h1 {
+  text-shadow: 3px 3px 0px #b154f0;
+  font-size: 60px;
+  font-family: "Metal Mania", cursive;
+  border-bottom: solid 2px #b154f0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.sect-2-games .container .row .col-md-4 {
+  margin-bottom: 15px;
+}
+.sect-2-games .container .row .col-md-4 .card {
+  position: relative;
+  background-color: transparent;
+}
+.sect-2-games .container .row .col-md-4 .card .header {
+  overflow: hidden;
+}
+.sect-2-games .container .row .col-md-4 .card .header img {
+  border-radius: 5px;
+}
+.sect-2-games .container .row .col-md-4 .card .header img:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+.sect-2-games .container .row .col-md-4 .card .card-body {
+  padding-top: 5px;
+  font-family: "Exo", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  color: #eee;
+}
+.sect-2-games .container .row .col-md-4 .card .card-body h3 {
+  font-size: 22px;
+}
+.sect-2-games .container .row .col-md-4 .card .link {
+  position: absolute;
+  background-color: #b154f0;
+  color: #fff;
+  font-weight: 600;
+  bottom: 90px;
+  right: 10px;
+  padding: 4px 15px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.sect-login {
+  padding: 80px 0;
+}
+.sect-login .container .row {
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.sect-login .container .row .block-login h3 {
+  font-size: 45px;
+  font-family: "Metal Mania", cursive;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+.sect-login .container .row .block-login form input {
+  background-color: transparent !important;
+  border: 2px solid #281e4d;
+  color: #fff;
+}
+.sect-login .container .row .block-login form input:focus {
+  box-shadow: none;
+  border-color: 2px solid #b154f0;
+}
+.sect-login .container .row .block-login form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3960784314);
+}
+.sect-login .container .row .block-login form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3960784314);
+}
+.sect-login .container .row .block-login form input::placeholder {
+  color: rgba(255, 255, 255, 0.3960784314);
+}
+.sect-login .container .row .block-login form button {
+  background: url("../images/home/btn-bg.webp") center center no-repeat;
+  line-height: 73px;
+  margin: 30px auto 40px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  font-size: 23px;
+  width: 230px;
+  padding: 0px 48px;
+  border-radius: 25px;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+  color: #ffffff;
+  border: 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+.sect-login .container .row .block-login p {
+  text-align: center;
+  color: #fff;
+}
+.sect-login .container .row .block-login p a {
+  color: #001aff;
+}
+
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+section {
+  padding: 50px 0;
+}
+
+p, a, li, span {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #9ca0d2;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.animate_pulse {
+  -webkit-animation: pulse 3s infinite ease-in-out alternate;
+          animation: pulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+footer .container .row {
+  justify-content: space-around;
+}
+footer .container .row .col-md-4 h2 {
+  letter-spacing: 2px;
+}
+footer .container .row .col-md-2 h3 {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+footer .container .row .col-md-2 ul {
+  padding-left: 0;
+}
+footer .container .row .col-md-2 ul li {
+  margin-bottom: 5px;
+}
+footer .container .row .col-md-2 ul li a {
+  color: #9ca0d2;
+}
+footer .container .text-copyright p {
+  font-size: 14px;
+}/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,67 @@
+@import "global";
+
+body {
+	background: url("/images/home/body-bg.webp") ;
+}
+
+* {
+	color: #fff;
+}
+
+.sec-1-home {
+	background: url("/images/home/bg-cover-hero.webp") center center no-repeat;
+	height: 100vh;
+	.container { 
+		padding-top: 50px;
+		.row {
+			.hero-left {
+				h1 {
+					margin-bottom: 30px;
+					font-size: 95px;
+					text-shadow: 3px 3px 0px #b154f0;
+					letter-spacing: 2px;
+					height: 240px;
+					span {
+						font-family: $metal;
+
+					}
+				}
+				p { 
+					color: #fff;
+					font-family: $exo;
+					font-size: 30px;
+					font-weight: 600;
+					text-transform: capitalize;
+				}
+				button {
+					background-color: #b154f0;
+					border: 3px solid #dead27;
+					padding: 10px 30px;
+					font-family: $metal;
+					letter-spacing: 5px;
+					color: #fff;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+
+
+.sect-2-home {
+	padding-top: 60px;
+	.container {
+		.row {
+			.col-md-6 {
+				h3 {
+					font-size: 15px;
+					color: #9ca0d2;
+				}
+				h1 {
+					font-weight: 700 ;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

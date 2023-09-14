@@ -1,0 +1,177 @@
+#disableImg{
+    pointer-events: none !important;
+}
+
+.imgClickable:hover{
+    transition: .3s;
+    height: 1.5;
+    width: 120px;
+}
+
+.img{
+    position: absolute;
+}
+
+.header{
+    display: grid;
+    position: relative;
+    /* background-color: red; */
+    width: 100vw;
+    height: 10vh;
+    grid-template-columns: 7.5% 7.5% 85%;
+    overflow: hidden;
+}
+
+.gameContainer{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin-top: 50px;
+    padding-bottom: 250px;
+}
+
+.btnBackContainer{
+    text-align: center;
+    margin: auto;
+    padding:0;
+}
+
+.btnBack{
+    color: #634705;
+    font-size: 50px;
+    background-color: Transparent;
+    border: none;
+}
+
+.logo{
+    width: 50px;
+    margin-top: 2.5vh;
+    justify-self: center;
+}
+
+.hdrTitle{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    color: orange;
+    justify-self: start;
+    font-weight: bold;
+    /* overflow: hidden; */
+}
+
+.player{
+    display: grid;
+    /* row-gap: 40px; */
+    justify-items: center;
+    margin-left: 15vw;
+    /* position: relative; */
+}
+
+.textPlayer{
+    font-size: 3vw;
+    font-weight: bold;
+    color: #9ca0d2 !important;
+}
+
+.playerRock{
+    margin-top: 15vh;
+}
+
+.playerPaper{
+    margin-top: 30vh;
+}
+
+.playerScissor{
+    margin-top: 55vh;
+}
+
+.midUtilities{
+    display: grid;
+    grid-template-rows: 95% 5%;
+}
+
+.textVs{
+    font-size: 100px;
+    color: red;
+    margin-top: 200px;
+    font-weight: bold;
+    justify-self:center;
+}
+
+.btnRefresh{
+    justify-self: center;
+    margin-top: 65vh;
+}
+
+.com{
+    display: grid;
+    row-gap: 40px;
+    justify-items: center;
+    margin-right: 15vw;
+    position: relative;
+}
+
+.comRock{
+    margin-top: 15vh;
+}
+
+.comPaper{
+    margin-top: 30vh;
+}
+
+.comScissor{
+    margin-top: 55vh;
+}
+
+.textCom{
+    font-size: 3vw;
+    font-weight: bold;
+    color: #9ca0d2 !important;
+}
+
+.selected{
+    width: 120px;
+    background-color: rgb(255,255,255, .5);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.textWin{
+    font-size: 100px;
+    background-color: green;
+    margin-top: 200px;
+    font-weight: bold;
+    justify-self:center;
+    color: white;
+    border-radius: 25px;
+    transform: rotate(-30deg);
+    font-size: 5vw;
+    padding: 20px;
+}
+
+.textLose{
+    font-size: 100px;
+    background-color: RED;
+    margin-top: 200px;
+    font-weight: bold;
+    justify-self:center;
+    color: white;
+    border-radius: 25px;
+    transform: rotate(-30deg);
+    font-size: 5vw;
+    padding: 20px;
+}
+
+.textDraw{
+    font-size: 100px;
+    background-color: orange;
+    margin-top: 200px;
+    font-weight: bold;
+    justify-self:center;
+    color: white;
+    border-radius: 25px;
+    transform: rotate(-30deg);
+    font-size: 5vw;
+    padding: 20px;
+}
+
