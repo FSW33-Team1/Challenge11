@@ -8,7 +8,6 @@ import { useSelector, useDispatch, connect } from 'react-redux';
 const Navbar = ({ user, logOut }) => {
 	const isLoggedIn = useSelector(state => state.isLoggedIn);
 	const dispatch = useDispatch();
-	console.log(isLoggedIn)
 
 	function logout(){
 		dispatch({type: 'NOTLOGGEDIN'});
