@@ -27,7 +27,7 @@
     justify-items: center;
     grid-template-columns: 33.3% 33.3% 33.3%;
     margin-top: 50px;
-    padding-bottom: 250px;
+    padding-bottom: 450px;
 }
 
 .btnBackContainer{
@@ -87,7 +87,7 @@
 
 .midUtilities{
     display: grid;
-    grid-template-rows: 95% 5%;
+    grid-template-rows: 90% 5% 5%;
 }
 
 .textVs{
@@ -100,7 +100,7 @@
 
 .btnRefresh{
     justify-self: center;
-    margin-top: 65vh;
+    margin-top: 60vh;
 }
 
 .com{
@@ -175,3 +175,6 @@
     padding: 20px;
 }
 
+.btnMusik {
+    left: 90% !important;
+}

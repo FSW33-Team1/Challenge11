@@ -8,9 +8,10 @@ import gambarGunting from '../../../public/images/gunting.png'
 import gambarKertas from '../../../public/images/kertas.png'
 import gambarRefresh from '../../../public/images/refresh.png'
 import styles from './game.module.css';
+import BtnPlayMusik from '@/components/BtnPlayMusik';
 
 
-function Game(){
+function Game() {
     const [isRock, setIsRock] = useState(false)
     const [isScissor, setIsScissor] = useState(false)
     const [isPaper, setIsPaper] = useState(false)
@@ -49,19 +50,19 @@ function Game(){
     function getRandomArbitrary(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
     }
-    
-    function comChoose(){
-        let result = getRandomArbitrary(1,4)
-        if (result == 1){
+
+    function comChoose() {
+        let result = getRandomArbitrary(1, 4)
+        if (result == 1) {
             setIsComRock(true)
-        } else if (result == 2){
+        } else if (result == 2) {
             setIsComScissor(true)
-        } else{
+        } else {
             setIsComPaper(true)
         }
     }
 
-    function refreshBoard(){
+    function refreshBoard() {
         setGameStatus('default');
         setIsInteractive(true);
 
@@ -74,34 +75,34 @@ function Game(){
         setIsComScissor(false);
     }
 
-    async function condition(){
-        if((isRock && isComRock) || (isScissor && isComScissor) || (isPaper && isComPaper)){
+    async function condition() {
+        if ((isRock && isComRock) || (isScissor && isComScissor) || (isPaper && isComPaper)) {
             setGameStatus('draw');
 
-        } else if (isRock && isComPaper){
+        } else if (isRock && isComPaper) {
             setGameStatus('lose');
-        } else if (isRock && isComScissor){
+        } else if (isRock && isComScissor) {
             setGameStatus('win');
             // addPoint();
-        } else if (isScissor && isComPaper){
+        } else if (isScissor && isComPaper) {
             setGameStatus('win');
             // addPoint();
-        } else if (isScissor && isComRock){
+        } else if (isScissor && isComRock) {
             setGameStatus('lose');
-        } else if (isPaper && isComScissor){
+        } else if (isPaper && isComScissor) {
             setGameStatus('lose');
-        } else if (isPaper && isComRock){
+        } else if (isPaper && isComRock) {
             setGameStatus('win');
             // addPoint();
         }
     }
 
-    async function decideResult(choice){
+    async function decideResult(choice) {
         console.log('clicked');
         setIsInteractive(false);
-        if (choice === 'batu'){
+        if (choice === 'batu') {
             setIsRock(true);
-        } else if (choice === 'gunting'){
+        } else if (choice === 'gunting') {
             setIsScissor(true);
         } else {
             setIsPaper(true);
@@ -109,93 +110,101 @@ function Game(){
         await comChoose();
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         condition();
     }, [isRock, isPaper, isScissor])
 
-    useEffect(()=>{
+    useEffect(() => {
         console.log('is interactive: ', isInteractive);
     }, [isInteractive]);
 
-    useEffect(()=>{
+    useEffect(() => {
         console.log('Game Stat: ', gameStatus);
     }, [gameStatus]);
 
-	return (
-        <div className= {styles.gameContainer}>
-            <div className= {styles.player}>
+    return (
+        <div className={styles.gameContainer}>
+
+            <div className={styles.player}>
                 <p className={styles.textPlayer}>PLAYER 1</p>
-                <Image 
-                className={isRock?`${styles.img} ${styles.playerRock} ${styles.selected}` : `${styles.img} ${styles.imgClickable} ${styles.playerRock}`} 
-                id={isInteractive?``:`${styles.disableImg}`}
-                onClick={() => decideResult('batu')}
-                src={gambarBatu}
-                alt="batu.png" 
-                width="100"
+                <Image
+                    className={isRock ? `${styles.img} ${styles.playerRock} ${styles.selected}` : `${styles.img} ${styles.imgClickable} ${styles.playerRock}`}
+                    id={isInteractive ? `` : `${styles.disableImg}`}
+                    onClick={() => decideResult('batu')}
+                    src={gambarBatu}
+                    alt="batu.png"
+                    width="100"
                 />
-                <Image 
-                className={isPaper?`${styles.img} ${styles.playerPaper} ${styles.selected}` : `${styles.img} ${styles.imgClickable} ${styles.playerPaper}`} 
-                id={isInteractive?``:`${styles.disableImg}`}
-                onClick={() => decideResult('kertas')}
-                src={gambarKertas}
-                alt="kertas.png" 
-                width="100"
+                <Image
+                    className={isPaper ? `${styles.img} ${styles.playerPaper} ${styles.selected}` : `${styles.img} ${styles.imgClickable} ${styles.playerPaper}`}
+                    id={isInteractive ? `` : `${styles.disableImg}`}
+                    onClick={() => decideResult('kertas')}
+                    src={gambarKertas}
+                    alt="kertas.png"
+                    width="100"
                 />
-                <Image 
-                className={isScissor?`${styles.img} ${styles.playerScissor} ${styles.selected}` : `${styles.img} ${styles.imgClickable} ${styles.playerScissor}`}
-                id={isInteractive?``:`${styles.disableImg}`}
-                onClick={() => decideResult('gunting')}
-                src={gambarGunting}
-                alt="gunting.png" 
-                width="100"/>
+                <Image
+                    className={isScissor ? `${styles.img} ${styles.playerScissor} ${styles.selected}` : `${styles.img} ${styles.imgClickable} ${styles.playerScissor}`}
+                    id={isInteractive ? `` : `${styles.disableImg}`}
+                    onClick={() => decideResult('gunting')}
+                    src={gambarGunting}
+                    alt="gunting.png"
+                    width="100" />
             </div>
             <div className={styles.midUtilities}>
                 {
-                    gameStatus === 'win'?
+                    gameStatus === 'win' ?
                         <h1 className={styles.textWin}>YOU WIN</h1>
-                    :
-                        (gameStatus === 'lose'?
-                            <h1 className={styles.textLose}>YOU LOSE</h1>
                         :
-                            (gameStatus === 'draw'?
-                                <h1 className={styles.textDraw}>DRAW</h1>
+                        (gameStatus === 'lose' ?
+                            <h1 className={styles.textLose}>YOU LOSE</h1>
                             :
+                            (gameStatus === 'draw' ?
+                                <h1 className={styles.textDraw}>DRAW</h1>
+                                :
                                 <h1 className={styles.textVs}>VS</h1>
                             )
                         )
-                    
+
                 }
-                <Image 
-                className={`${styles.img} ${styles.imgClickable} ${styles.btnRefresh}`} 
-                id='refresh' 
-                onClick={() => refreshBoard()}
-                src={ gambarRefresh }
-                alt="refresh.png" 
-                width="75"/>
+                <Image
+                    className={`${styles.img} ${styles.imgClickable} ${styles.btnRefresh}`}
+                    id='refresh'
+                    onClick={() => refreshBoard()}
+                    src={gambarRefresh}
+                    alt="refresh.png"
+                    width="75" />
+
+                <div className="">
+                    <BtnPlayMusik />
+                </div>
             </div>
             <div className={styles.com}>
                 <p className={styles.textCom}>COM</p>
-                <Image 
-                className={isComRock?`${styles.img} ${styles.comRock} ${styles.selected}` : `${styles.img} ${styles.comRock}`} 
-                id='1' 
-                src={gambarBatu}
-                alt="batu.png" 
-                width="100"/>
-                <Image 
-                className={isComPaper?`${styles.img} ${styles.comPaper} ${styles.selected}` : `${styles.img} ${styles.comPaper}`} 
-                id='2' 
-                src={gambarKertas}
-                alt="kertas.png" 
-                width="100"/>
-                <Image 
-                className={isComScissor?`${styles.img} ${styles.comScissor} ${styles.selected}` : `${styles.img} ${styles.comScissor}`} 
-                id="3" 
-                src={gambarGunting}
-                alt="gunting.png" 
-                width="100"/>
+                <Image
+                    className={isComRock ? `${styles.img} ${styles.comRock} ${styles.selected}` : `${styles.img} ${styles.comRock}`}
+                    id='1'
+                    src={gambarBatu}
+                    alt="batu.png"
+                    width="100" />
+                <Image
+                    className={isComPaper ? `${styles.img} ${styles.comPaper} ${styles.selected}` : `${styles.img} ${styles.comPaper}`}
+                    id='2'
+                    src={gambarKertas}
+                    alt="kertas.png"
+                    width="100" />
+                <Image
+                    className={isComScissor ? `${styles.img} ${styles.comScissor} ${styles.selected}` : `${styles.img} ${styles.comScissor}`}
+                    id="3"
+                    src={gambarGunting}
+                    alt="gunting.png"
+                    width="100" />
             </div>
+
+
+
         </div>
-	)
+    )
 }
 
 export default Game;
