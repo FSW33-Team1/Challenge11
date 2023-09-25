@@ -1,0 +1,13 @@
+{
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "controller/*.js",
+        "middleware/*.js",
+        "!**/index.js"
+    ],
+    "coverageThreshold": {
+        "global": {
+            "lines": 80
+        }
+    }
+}

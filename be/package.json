@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "test": "jest",
+    "testWithCoverage": "jest --coverage --coverageReporters='text-summary'"
   },
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
@@ -23,6 +25,7 @@
     "sequelize": "^6.32.1"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "sequelize-cli": "^6.6.1"
   }
 }
